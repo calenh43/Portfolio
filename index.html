@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calen Halcom | CAD Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header, footer {
+      text-align: center;
+      padding: 2rem;
+    }
+    h1, h2 {
+      font-weight: 300;
+    }
+    .section {
+      padding: 2rem 5%;
+    }
+    .model-viewer {
+      width: 100%;
+      height: 500px;
+      border: none;
+    }
+    .certificates a, .resume a {
+      display: block;
+      margin: 0.5rem 0;
+      color: #4fc3f7;
+    }
+  </style>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Calen Halcom</h1>
+    <p>Mechanical Design Portfolio</p>
+  </header>
+
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a creative and driven mechanical engineering student at Texas A&M University (21–25), with a strong background in CAD design, prototyping, and noise & vibration analysis. My hands-on experience spans from Tesla's NVH team, where I optimized acoustic materials and root-caused structural leaks, to leadership in Formula SAE chassis design, where I accelerated development cycles and exceeded torsional rigidity goals. I'm passionate about elegant, manufacturable solutions and thrive in high-impact engineering environments.
+    </p>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>3D Models</h2>
+    <model-viewer src="ferrari_f430.glb" camera-controls auto-rotate background-color="#000000"></model-viewer>
+    <p>Ferrari F430: Modeled for design and rendering practice.</p>
+    <br />
+    <model-viewer src="full_rover_simple.glb" camera-controls auto-rotate background-color="#000000"></model-viewer>
+    <p>Simple Rover: Chassis design with mechanical layout for suspension and drivetrain.</p>
+  </section>
+
+  <section class="section certificates" id="certifications">
+    <h2>Certifications</h2>
+    <a href="CSWA.pdf" target="_blank">Certified SolidWorks Associate – CSWA</a>
+    <a href="CSWP.pdf" target="_blank">Certified SolidWorks Professional – Mechanical Design</a>
+    <a href="CSWPA-Weldments.pdf" target="_blank">Certified SolidWorks Professional – Weldments</a>
+  </section>
+
+  <section class="section resume" id="resume">
+    <h2>Resume</h2>
+    <a href="Calen Halcom Resume.pdf" target="_blank">Download Resume (PDF)</a>
+  </section>
+
+  <footer>
+    <p>© 2025 Calen Halcom | Contact: <a href="mailto:calenh43@tamu.edu">calenh43@tamu.edu</a></p>
+  </footer>
+</body>
+</html>
